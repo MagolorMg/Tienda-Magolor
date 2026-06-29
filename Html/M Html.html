@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGOLOR SHOP</title>
+    <link rel="stylesheet" href="../Mg CSS/magolorstyle.css">
+</head>
+<body>
+    <header>
+        <div>
+             <h1>MAGOLOR SHOP</h1>
+        </div>
+        <nav>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial;
+            }
+
+
+            nav {
+                background: #333;
+            }
+
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            li {
+                border-bottom: 1px solid #555;
+            }
+
+
+            a{
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+            }
+
+
+            menu {
+                display: none;
+            }
+
+
+            label {
+                color: white;
+                display: block;
+                padding: 10px;
+                cursor: pointer;
+                background: #333;
+            }
+
+
+            ul {
+                display: none;
+            }
+
+
+            #menu:checked + ul{
+                display: block;
+            }
+
+
+            @media (min-width: 768px) {
+
+
+                label {
+                    display: none;
+                }
+
+
+                ul {
+                    display: flex;
+                }
+
+
+                li {
+                    border: none;
+                }
+            }
+        </style>
+        </nav>
+        <div>
+            <nav>
+            <ul>
+                <li><a href="../Html/Login.html">Inicio</a></li>
+                <li><a href="../Html/Registro.html">Registrarme</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div>
+            <img src="../Mg img/Magolor.jpg" alt="magolor" width="100">
+        </div>
+        <div class="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+
+     <div>
+    <main>
+        <h1>CARRUSEL MAGOLOR</h1>  
+        <link rel="stylesheet" href="../Mg CSS/magolorcarrusel.css">
+        <section class ="slider">
+            <div class = "slider-nav">
+                <a href="#N3DS">1</a>
+                <a href="#magolorconsole">2</a>
+                <a href="#Iphonechafa">3</a>
+                <a href="#maglorfigure">4</a>
+                <a href="#maglorplushie">5</a>
+                <a href="#maglortesticulartorsion">6</a>
+                <a href="#CULEROS">7</a>            
+             </div>
+
+
+             <div class = "slides">
+                <div id = "N3DS" class ="slides">
+                    <img src="../Mg img/N3DS.jpg" alt = "N3DS" >
+                </div>
+                <div id = "magolorconsole" class ="slides">
+                    <img src="../Mg img/magolorconsole.jpg" alt = "magolorconsole" >
+                </div>
+                <div id = "Iphonechafa" class ="slides">
+                    <img src="../Mg img/Iphonechafa.JPG" alt = "Iphonechafa" >
+                </div>
+                <div id = "magolorfigure" class ="slides">
+                    <img src="../Mg img/magolorfigure.jpg.png" alt = "magolorfigure" >
+                </div>
+                <div id = "magolorplushie" class ="slides">
+                    <img src="../Mg img/magolorplushie.jpg" alt = "magolorplushie" >
+                </div>
+                <div id = "magolortesticulartorsion" class ="slides">
+                    <img src="../Mg img/magolortesticulartorsion.jpg" alt = "magolortesticulartorsion" >
+                </div>
+                <div id = "CULEROS" class ="slides">
+                    <img src="../Mg img/CULEROS.jpg" alt = "CULEROS" >
+                </div>
+             </div>
+        </section>
+    </main>
+
+
+    <main>
+         <div>
+             <h1>¡DONDE PUEDES ENCONTRAR TODO LO QUE DESEAS!</h1>
+        </div>
+        <h2>Maglor Consolas:</h2>
+        <section class="products">
+            <div class="product-card">
+                <h3>Nintendo 3DS</h3>
+                <p>$200</p>
+                <img src="../Mg img/N3DS.jpg" alt="N3DS" width="170">
+                <button class="add-btn" data-id="1" data-name="Nintendo 3DS" data-price="200">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <h3>Nintendo Switch (Edición: Monster Hunters) </h3>
+                <p>$500</p>
+                <img src="../Mg img/magolorconsole.jpg" alt="mg" width="192">
+                <button class="add-btn" data-id="2" data-name="Nintendo Switch (Edición: Monster Hunters)" data-price="500">Añadir al carrito</button>
+            </div>
+            <br>
+            <div>
+            <h2>Maglor Dispositivos:</h2>
+            </div>
+            <div class="product-card">
+                <h3> IPhone 17</h3>
+                <p>$1740</p>
+                <img src="../Mg img/Iphonechafa.JPG" alt="chafa" width="203">
+                <button class="add-btn" data-id="3" data-name="Magolor Phone IMAX" data-price="1740">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <h3>Auriculares SONY Elite</h3>
+                <p>$175</p>
+                <img src="../Mg img/CULEROS.jpg" alt="CULEROS" width="180">
+                <button class="add-btn" data-id="4" data-name="Auriculares SONY Elite" data-price="175">Añadir al carrito</button>
+            </div>
+            <div>
+                <h2>Magolor Stuffs:</h2>
+            </div>
+            <div class="product-card">
+                <h3>Magolor Figure</h3>
+                <p>$20</p>
+                <img src="../Mg img/magolorfigure.jpg.png" alt="magolorfigure" width="130">
+                <button class="add-btn" data-id="5" data-name="Magolor Figure" data-price="20">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <h3>Magolor Plushie</h3>
+                <p>$30</p>
+                <img src="../Mg img/magolorplushie.jpg" alt="magolorplushie" width="150">
+                <button class="add-btn" data-id="6" data-name="Magolor Plushie" data-price="30">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <h3>Magolor MEME</h3>
+                <p>$0</p>
+                <img src="../Mg img/magolortesticulartorsion.jpg" alt="magolormeme" width="185">
+                <button class="add-btn" data-id="7" data-name="Magolor MEME" data-price="0">Añadir al carrito</button>
+            </div><br>
+            <br>
+            <div><br>
+                <h2>Gorillaz Vinil Disc Section::</h2>
+            </div>
+            <div class="product-card">
+                <h3>Plastic Beach Vinil</h3>
+                <p>$45</p>
+                <img src="../Mg img/Gorillaz.jpg" alt="Plastic Beach" width="150">
+                <button class="add-btn" data-id="8" data-name="Plastic Beach Vinil" data-price="45">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <h3>Magolor Plushie</h3>
+                <p>$52</p>
+                <img src="../Mg img/The Mountain.jpg" alt="The Mountain" width="150">
+                <button class="add-btn" data-id="9" data-name="The Mountain Vinil" data-price="52">Añadir al carrito</button>
+            </div>
+        </section>
+
+
+        </div>
+
+
+
+
+        <section class="cart-container">
+            <h2>Tu Carrito</h2>
+            <ul id="cart-items"></ul>
+            <div><img src="../Mg img/magolorT-POSE.jpg" alt="T-POSE" width="200"></div>
+            <div class="total-section">
+                <strong>Total: $<span id="total-price">0</span></strong>
+                <button id="clear-cart">Vaciar Carrito</button>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="../Mg JS/magolorfunctions.js"></script>
+</body>
+<footer>
+    <h2>PROPIEDAD DE:</h2>
+    <h3>MAGOLOR, INC.</h3>
+</footer>
+</html>

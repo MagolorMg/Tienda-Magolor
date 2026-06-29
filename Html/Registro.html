@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magolor CRUD</title>
+</head>
+<body>
+
+    <div class="container">
+      <h1>¡Registrate en MAGOLOR SHOP!</h1>
+      <div class="form-box">
+         <h3 id="formTitle">Agregar Usuario</h3>
+         <input type="text" id="nombre" placeholder="Nombre">
+         <input type="text" id="apellido" placeholder="Apellido">
+         <input type="text" id="nickname" placeholder="Nickname">
+         <button class="btn btn-add" onclick="guardar()">Guardar</button>
+      </div>
+      </div>
+      <div class="table-box">
+        <table>
+          <thead>
+             <tr>
+               <th>Nombre</th>
+               <th>Apellido</th>
+               <th>Nickname</th> 
+             </tr>
+          </thead>
+          <tbody id="tablaUsuarios"></tbody>
+        </table>
+    </div> 
+</body>
+<footer>
+    <script src="../Mg JS/script.js"></script>
+    <link rel="stylesheet" href="../Mg CSS/Css.css">
+</footer>
+</html>

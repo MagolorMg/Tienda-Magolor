@@ -1,0 +1,64 @@
+.slider {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.slider-nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slider-nav a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.slider-nav a:hover {
+    background: #555;
+}
+
+/* Ajustado a 700% para 7 diapositivas (100% por cada una) */
+.slides {
+    display: flex;
+    width: 700%; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    /* flex: 1 0 100% puede causar problemas si el contenedor mide 700%, mejor dejamos que herede el ancho correcto */
+    flex: 1; 
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+
+
+#N3DS:target ~ .slides { transform: translateX(0); }
+#maglorconsole:target ~ .slides { transform: translateX(calc(-100% / 7)); }
+#Iphonechafa:target ~ .slides { transform: translateX(calc(-100% / 7 * 2)); }
+#maglorfigure:target ~ .slides { transform: translateX(calc(-100% / 7 * 3)); }
+#maglorplushie:target ~ .slides { transform: translateX(calc(-100% / 7 * 4)); }
+#maglortesticulartorsion:target ~ .slides { transform: translateX(calc(-100% / 7 * 5)); }
+#CULEROS:target ~ .slides { transform: translateX(calc(-100% / 7 * 6)); }
+
+/* Ocultar los anclajes para que no rompan el diseño */
+.slide-anchor {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
