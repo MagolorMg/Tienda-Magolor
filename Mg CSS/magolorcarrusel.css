@@ -27,38 +27,23 @@
     background: #555;
 }
 
-/* Ajustado a 700% para 7 diapositivas (100% por cada una) */
-.slides {
-    display: flex;
-    width: 700%; 
-    transition: transform 0.5s ease-in-out;
+.carousel-item {
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: black;
+    max-width: 1024px;
+    max-height: 640px;
+    left: 140px;
+    top: 0px;
 }
 
-.slide {
-    width: 100%;
-    /* flex: 1 0 100% puede causar problemas si el contenedor mide 700%, mejor dejamos que herede el ancho correcto */
-    flex: 1; 
-}
-
-.slide img {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-}
-
-
-
-#N3DS:target ~ .slides { transform: translateX(0); }
-#maglorconsole:target ~ .slides { transform: translateX(calc(-100% / 7)); }
-#Iphonechafa:target ~ .slides { transform: translateX(calc(-100% / 7 * 2)); }
-#maglorfigure:target ~ .slides { transform: translateX(calc(-100% / 7 * 3)); }
-#maglorplushie:target ~ .slides { transform: translateX(calc(-100% / 7 * 4)); }
-#maglortesticulartorsion:target ~ .slides { transform: translateX(calc(-100% / 7 * 5)); }
-#CULEROS:target ~ .slides { transform: translateX(calc(-100% / 7 * 6)); }
-
-/* Ocultar los anclajes para que no rompan el diseño */
-.slide-anchor {
+.Box-N{
     position: absolute;
-    top: 0;
-    left: 0;
+    z-index: -2;
+    width: 100%;          
+    height: 369px;        
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #333333;
+    transform: translate(0px, -10px);
 }
